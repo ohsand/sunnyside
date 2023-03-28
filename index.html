@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./styles.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@700;900&display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap" rel="stylesheet">  
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Sunnyside agency </title>
+
+</head>
+<body>
+  <header>
+    <div id="header">
+      <img src="./images/logo.svg" alt="logo">
+      <img id="hamburger" src="./images/icon-hamburger.svg" alt="hamburger">
+      <nav>
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Projects</a></li>
+          <button>Contact</button>
+        </ul>
+      </nav>
+    </div>
+
+    <div id="mobileNav" class="invisible">
+      <nav>
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div id="headerText">
+      <h1>We are creatives</h1>
+      <img src="./images/icon-arrow-down.svg" alt="arrow">
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="containerLeft" id="transformLeft">
+      <div class="textContainer">
+        <h2>Transform your brand</h2>
+        <p>We are a full-service creative agency specializing in helping brands grow fast. 
+        Engage your clients through compelling visuals that do most of the marketing for you.</p>
+        <button>Learn more</button>
+        <div class="underline"></div>
+      </div>
+    </div>
+    <div class="containerRight" id="transformRight">
+      
+    </div>
+  </div>
+
+  <div class="container reversed">
+    <div class="containerLeft" id="standoutLeft">
+      <div class="textContainer">
+        <h3>Stand out to the right audience</h3>
+        <p>Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places. </p>
+        <button>Learn more</button>
+      </div>
+    </div>
+    <div class="containerRight" id="standoutRight">
+      
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="containerLeft" id="design">
+      <div class="textContainer">
+        <h4>Graphic design</h4>
+        <p>Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.</p>
+      </div>
+    </div>
+    <div class="containerRight" id="photography">
+      <div class="textContainer">
+        <h5>Photography</h5>
+        <p>Increase your credibility by getting the most stunning, high-quality photos that improve your business image.</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="testimonials">
+    <h6>Client testimonials</h6>
+    <div id="testimonialSection">
+      <div class="review">
+        <img src="./images/image-emily.jpg" alt="Emily">
+        <p class="comment">We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.</p>
+        <p class="name">Emily R.</p>
+        <p class="role">Marketing Director</p>
+      </div>
+
+      <div class="review">
+        <img src="./images/image-thomas.jpg" alt="Thomas">
+        <p class="comment">Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.</p>
+        <p class="name">Thomas S.</p>
+        <p class="role">Chief Operating Officer</p>
+      </div>
+
+      <div class="review">
+        <img src="./images/image-jennie.jpg" alt="Jennie">
+        <p class="comment">Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!</p>
+        <p class="name">Jennie F.</p>
+        <p class="role">Business Owner</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="imageSection">
+    <img class="imageOne" src="./images/desktop/image-gallery-milkbottles.jpg" alt="milk bottles">
+    <img class="imageTwo" src="./images/desktop/image-gallery-orange.jpg" alt="orange">
+    <img class="imageThree" src="./images/desktop/image-gallery-cone.jpg" alt="cone">
+    <img class="imageFour" src="./images/desktop/image-gallery-sugarcubes.jpg" alt="sygarcubes">
+  </div>
+
+  <footer>
+    <div id="footer">
+      <img class="footerLogo" src="./images/logo.svg" alt="logo">
+      <nav>
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Projects</a></li>
+        </ul>
+        <div id="socials">
+          <img src="./images/icon-facebook.svg" alt="facebook">
+          <img src="./images/icon-instagram.svg" alt="intagram">
+          <img src="./images/icon-twitter.svg" alt="twitter">
+          <img src="./images/icon-pinterest.svg" alt="pinterest">
+        </div>
+      </nav>
+    </div>
+  </footer>
+  
+  <script>
+    window.onload = function() {
+      document.getElementById("hamburger").addEventListener('click', function (e) {
+      var navbar = document.getElementById("mobileNav");
+      navbar.classList.toggle("invisible");
+      });
+    }
+    </script>
+</body>
+</html>
