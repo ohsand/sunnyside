@@ -133,6 +133,7 @@ h1 {
     flex-direction: column;
     max-width: 410px;
     margin: 20px;
+    overflow: visible;
 }
 
 h2 {
@@ -162,6 +163,7 @@ h2 {
     background-color: hsl(47, 89%, 85%);
     height: 10px;
     border-radius: 5px;
+    overflow: visible;
 }
 
 .textContainer button:hover {
