@@ -406,7 +406,10 @@ footer {
     max-width: 1440px;
     position: absolute;
     top: 90px;
+    background-color: #3EBFFF;
+    z-index: 100;
 }
+
 
 #mobileNav nav ul {
     list-style: none;
